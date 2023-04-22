@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d3sd5ttan6ivb"
+path="res://.godot/imported/VectorVibes Edit 1 Render 1.wav-7c73ab947e39659ee35cb83d2168b5df.sample"
+
+[deps]
+
+source_file="res://TracktionStuff/VectorVibes/Rendered/VectorVibes Edit 1 Render 1.wav"
+dest_files=["res://.godot/imported/VectorVibes Edit 1 Render 1.wav-7c73ab947e39659ee35cb83d2168b5df.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

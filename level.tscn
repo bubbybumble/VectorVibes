@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://cymxkinr1lfvu"]
+
+[ext_resource type="Script" path="res://GameMaster.gd" id="1_clkob"]
+[ext_resource type="Script" path="res://Shape.gd" id="2_8jxxn"]
+[ext_resource type="AudioStream" uid="uid://dsm8pi32htlx0" path="res://TracktionStuff/VectorVibes/Exported/VectorVibes Edit 1 Export 1.mp3" id="3_tu6c6"]
+
+[node name="Workspace" type="Node2D"]
+script = ExtResource("1_clkob")
+
+[node name="Stewart" type="Node2D" parent="."]
+position = Vector2(622, 477)
+script = ExtResource("2_8jxxn")
+
+[node name="head" type="Line2D" parent="Stewart"]
+position = Vector2(-587, -186)
+points = PackedVector2Array(479, 151, 481, 218, 603, 261, 688, 208, 701, 142, 586, 105, 479, 151)
+width = 2.0
+
+[node name="eye" type="Line2D" parent="Stewart"]
+position = Vector2(-584, -184)
+points = PackedVector2Array(542, 150, 541, 182)
+width = 2.0
+
+[node name="eye2" type="Line2D" parent="Stewart"]
+position = Vector2(-587, -186)
+points = PackedVector2Array(612, 155, 613, 180)
+width = 2.0
+
+[node name="mouth" type="Line2D" parent="Stewart"]
+position = Vector2(-618, -153)
+points = PackedVector2Array(582, 173, 613, 196, 644, 174)
+width = 2.0
+
+[node name="D" type="Node2D" parent="."]
+visible = false
+position = Vector2(605, 298)
+script = ExtResource("2_8jxxn")
+
+[node name="bubble" type="Line2D" parent="D"]
+position = Vector2(-587, -186)
+points = PackedVector2Array(479, 151, 526, 232, 626.047, 233.482, 644, 258, 661, 234, 694, 234, 728, 164, 682, 128, 546, 125, 479, 151)
+width = 2.0
+
+[node name="letter" type="Line2D" parent="D"]
+position = Vector2(-566, -188)
+points = PackedVector2Array(576, 152, 575, 211, 571, 147, 590, 151, 612, 174, 601, 207, 575, 211, 597, 204, 608, 175, 588, 155, 576, 152)
+width = 2.0
+default_color = Color(0.788235, 0, 0.788235, 1)
+
+[node name="F" type="Node2D" parent="."]
+visible = false
+position = Vector2(603, 292)
+script = ExtResource("2_8jxxn")
+
+[node name="bubble" type="Line2D" parent="F"]
+position = Vector2(-587, -186)
+points = PackedVector2Array(496, 160, 526, 232, 593, 241, 614, 267, 640, 237, 694, 234, 728, 164, 673, 130, 599, 105, 545, 128, 496, 160)
+width = 2.0
+
+[node name="letter" type="Line2D" parent="F"]
+position = Vector2(-562, -185)
+points = PackedVector2Array(582, 205, 581.422, 175.522, 581, 154, 610, 155, 586, 163, 587, 168, 606, 171, 588, 176, 582, 205)
+width = 2.0
+default_color = Color(1, 0.788235, 0, 1)
+
+[node name="J" type="Node2D" parent="."]
+visible = false
+position = Vector2(601, 294)
+script = ExtResource("2_8jxxn")
+
+[node name="bubble" type="Line2D" parent="J"]
+position = Vector2(-587, -186)
+points = PackedVector2Array(523, 166, 546, 225, 605, 230, 618, 258, 639, 230, 680, 225, 693, 167, 669, 128, 553, 129, 523, 166)
+width = 2.0
+
+[node name="letter" type="Line2D" parent="J"]
+position = Vector2(-566, -188)
+points = PackedVector2Array(566, 148, 620, 147, 599, 158, 595, 201, 580, 210, 556, 201, 551, 188, 556, 191, 562, 198, 574, 202, 582, 202, 589, 195, 592, 160, 566, 148)
+width = 2.0
+default_color = Color(0, 1, 0.772549, 1)
+
+[node name="K" type="Node2D" parent="."]
+visible = false
+position = Vector2(597, 301)
+script = ExtResource("2_8jxxn")
+
+[node name="bubble" type="Line2D" parent="K"]
+position = Vector2(-590, -186)
+points = PackedVector2Array(544, 152, 542, 223, 561, 233, 585, 262, 582, 233, 664, 231, 673, 171, 682, 128, 606, 118, 544, 152)
+width = 2.0
+
+[node name="letter" type="Line2D" parent="K"]
+position = Vector2(-562, -186)
+points = PackedVector2Array(579, 141, 571, 212, 580, 175, 601, 213, 587, 175, 596, 155, 581, 168, 579, 141)
+width = 2.0
+default_color = Color(1, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tu6c6")
