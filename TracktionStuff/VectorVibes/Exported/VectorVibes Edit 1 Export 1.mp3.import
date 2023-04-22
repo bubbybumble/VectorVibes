@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/VectorVibes Edit 1 Export 1.mp3-2a9586380d388
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

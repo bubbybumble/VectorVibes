@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cymxkinr1lfvu"]
+[gd_scene load_steps=9 format=3 uid="uid://cymxkinr1lfvu"]
 
 [ext_resource type="Script" path="res://GameMaster.gd" id="1_clkob"]
 [ext_resource type="Script" path="res://Shape.gd" id="2_8jxxn"]
+[ext_resource type="Script" path="res://Bubble.gd" id="3_ssgq5"]
 [ext_resource type="AudioStream" uid="uid://dsm8pi32htlx0" path="res://TracktionStuff/VectorVibes/Exported/VectorVibes Edit 1 Export 1.mp3" id="3_tu6c6"]
+[ext_resource type="AudioStream" uid="uid://kcrd1ofjs3th" path="res://TracktionStuff/VectorVibes/Exported/D.mp3" id="5_dyms4"]
+[ext_resource type="AudioStream" uid="uid://f04eiqrvsluw" path="res://TracktionStuff/VectorVibes/Exported/F.mp3" id="6_x6ks2"]
+[ext_resource type="AudioStream" uid="uid://bb3m8mhf0odvs" path="res://TracktionStuff/VectorVibes/Exported/J.mp3" id="7_a3k3b"]
+[ext_resource type="AudioStream" uid="uid://cm0psfwrupsuo" path="res://TracktionStuff/VectorVibes/Exported/K.mp3" id="8_lhrwa"]
 
 [node name="Workspace" type="Node2D"]
 script = ExtResource("1_clkob")
@@ -34,7 +39,7 @@ width = 2.0
 [node name="D" type="Node2D" parent="."]
 visible = false
 position = Vector2(605, 298)
-script = ExtResource("2_8jxxn")
+script = ExtResource("3_ssgq5")
 
 [node name="bubble" type="Line2D" parent="D"]
 position = Vector2(-587, -186)
@@ -50,7 +55,7 @@ default_color = Color(0.788235, 0, 0.788235, 1)
 [node name="F" type="Node2D" parent="."]
 visible = false
 position = Vector2(603, 292)
-script = ExtResource("2_8jxxn")
+script = ExtResource("3_ssgq5")
 
 [node name="bubble" type="Line2D" parent="F"]
 position = Vector2(-587, -186)
@@ -66,7 +71,7 @@ default_color = Color(1, 0.788235, 0, 1)
 [node name="J" type="Node2D" parent="."]
 visible = false
 position = Vector2(601, 294)
-script = ExtResource("2_8jxxn")
+script = ExtResource("3_ssgq5")
 
 [node name="bubble" type="Line2D" parent="J"]
 position = Vector2(-587, -186)
@@ -82,7 +87,7 @@ default_color = Color(0, 1, 0.772549, 1)
 [node name="K" type="Node2D" parent="."]
 visible = false
 position = Vector2(597, 301)
-script = ExtResource("2_8jxxn")
+script = ExtResource("3_ssgq5")
 
 [node name="bubble" type="Line2D" parent="K"]
 position = Vector2(-590, -186)
@@ -97,3 +102,15 @@ default_color = Color(1, 0, 0, 1)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_tu6c6")
+
+[node name="d" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dyms4")
+
+[node name="f" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_x6ks2")
+
+[node name="j" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_a3k3b")
+
+[node name="k" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_lhrwa")
