@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cymxkinr1lfvu"]
+[gd_scene load_steps=10 format=3 uid="uid://cymxkinr1lfvu"]
 
 [ext_resource type="Script" path="res://GameMaster.gd" id="1_clkob"]
 [ext_resource type="Script" path="res://Shape.gd" id="2_8jxxn"]
@@ -8,6 +8,10 @@
 [ext_resource type="AudioStream" uid="uid://f04eiqrvsluw" path="res://TracktionStuff/VectorVibes/Exported/F.mp3" id="6_x6ks2"]
 [ext_resource type="AudioStream" uid="uid://bb3m8mhf0odvs" path="res://TracktionStuff/VectorVibes/Exported/J.mp3" id="7_a3k3b"]
 [ext_resource type="AudioStream" uid="uid://cm0psfwrupsuo" path="res://TracktionStuff/VectorVibes/Exported/K.mp3" id="8_lhrwa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ynb0s"]
+font_size = 100
+font_color = Color(0, 1, 0, 1)
 
 [node name="Workspace" type="Node2D"]
 script = ExtResource("1_clkob")
@@ -114,3 +118,32 @@ stream = ExtResource("7_a3k3b")
 
 [node name="k" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_lhrwa")
+
+[node name="score" type="Label" parent="."]
+offset_left = 196.0
+offset_top = 490.0
+offset_right = 256.0
+offset_bottom = 516.0
+text = "SCORE: 0"
+
+[node name="health" type="Label" parent="."]
+offset_left = 196.0
+offset_top = 516.0
+offset_right = 265.0
+offset_bottom = 542.0
+text = "HEALTH: 3"
+
+[node name="space" type="Label" parent="."]
+offset_left = 577.0
+offset_top = 617.0
+offset_right = 656.0
+offset_bottom = 643.0
+text = "[space]"
+horizontal_alignment = 1
+
+[node name="countdown" type="Label" parent="."]
+offset_left = 602.0
+offset_top = 78.0
+offset_right = 659.0
+offset_bottom = 218.0
+label_settings = SubResource("LabelSettings_ynb0s")

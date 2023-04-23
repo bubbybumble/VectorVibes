@@ -1,6 +1,6 @@
 extends Node2D
 
-
+var wiggle_amt = 1.0
 
 const line_thickness = 2
 
@@ -31,12 +31,16 @@ func _draw():
 	
 func wiggle(v):
 	for i in range(v.size()):
-		v[i].x += randi_range(-1,1) # only a bit of wiggle is a sufficient jiggle!
-		v[i].y += randi_range(-1,1)
+		v[i].x += randi_range(-wiggle_amt,wiggle_amt) # only a bit of wiggle is a sufficient jiggle!
+		v[i].y += randi_range(-wiggle_amt,wiggle_amt)
 
 
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _process(delta):
 	queue_redraw()
+	if wiggle_amt > 1:
+		wiggle_amt -= delta * 5
+	wiggle_amt = max(wiggle_amt, 1)
+		
