@@ -1,16 +1,25 @@
-[gd_scene load_steps=10 format=3 uid="uid://cymxkinr1lfvu"]
+[gd_scene load_steps=13 format=3 uid="uid://cymxkinr1lfvu"]
 
 [ext_resource type="Script" path="res://GameMaster.gd" id="1_clkob"]
-[ext_resource type="Script" path="res://Shape.gd" id="2_8jxxn"]
+[ext_resource type="Script" path="res://Stewart.gd" id="2_uku74"]
 [ext_resource type="Script" path="res://Bubble.gd" id="3_ssgq5"]
 [ext_resource type="AudioStream" uid="uid://dsm8pi32htlx0" path="res://TracktionStuff/VectorVibes/Exported/VectorVibes Edit 1 Export 1.mp3" id="3_tu6c6"]
 [ext_resource type="AudioStream" uid="uid://kcrd1ofjs3th" path="res://TracktionStuff/VectorVibes/Exported/D.mp3" id="5_dyms4"]
 [ext_resource type="AudioStream" uid="uid://f04eiqrvsluw" path="res://TracktionStuff/VectorVibes/Exported/F.mp3" id="6_x6ks2"]
 [ext_resource type="AudioStream" uid="uid://bb3m8mhf0odvs" path="res://TracktionStuff/VectorVibes/Exported/J.mp3" id="7_a3k3b"]
 [ext_resource type="AudioStream" uid="uid://cm0psfwrupsuo" path="res://TracktionStuff/VectorVibes/Exported/K.mp3" id="8_lhrwa"]
+[ext_resource type="FontFile" uid="uid://dlqshs5gav8f2" path="res://ARCADE_N.TTF" id="9_1pkvc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0po87"]
+font = ExtResource("9_1pkvc")
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ci2y"]
+font = ExtResource("9_1pkvc")
+font_size = 50
 
 [sub_resource type="LabelSettings" id="LabelSettings_ynb0s"]
-font_size = 100
+font = ExtResource("9_1pkvc")
+font_size = 75
 font_color = Color(0, 1, 0, 1)
 
 [node name="Workspace" type="Node2D"]
@@ -18,7 +27,7 @@ script = ExtResource("1_clkob")
 
 [node name="Stewart" type="Node2D" parent="."]
 position = Vector2(622, 477)
-script = ExtResource("2_8jxxn")
+script = ExtResource("2_uku74")
 
 [node name="head" type="Line2D" parent="Stewart"]
 position = Vector2(-587, -186)
@@ -38,6 +47,15 @@ width = 2.0
 [node name="mouth" type="Line2D" parent="Stewart"]
 position = Vector2(-618, -153)
 points = PackedVector2Array(582, 173, 613, 196, 644, 174)
+width = 2.0
+
+[node name="body" type="Line2D" parent="Stewart"]
+points = PackedVector2Array(-10, 78, -84, 97, -154, 152, -81, 122, -36, 134, -44, 171, -84, 207, -29.1301, 185.452, 8, 141, 49, 214, 38, 126, 97, 112, 162, 27, 85, 69, 24, 83)
+width = 2.0
+
+[node name="body2" type="Line2D" parent="Stewart"]
+visible = false
+points = PackedVector2Array(-10, 78, -70, 87, -151, 51, -78, 112, -36, 134, -63, 226, 8, 141, 40.3469, 180.278, 83, 200, 51.2132, 168.181, 38, 126, 81, 127, 154, 169, 99, 102, 24, 83)
 width = 2.0
 
 [node name="D" type="Node2D" parent="."]
@@ -120,30 +138,34 @@ stream = ExtResource("7_a3k3b")
 stream = ExtResource("8_lhrwa")
 
 [node name="score" type="Label" parent="."]
-offset_left = 196.0
-offset_top = 490.0
-offset_right = 256.0
-offset_bottom = 516.0
+offset_left = 186.0
+offset_top = 493.0
+offset_right = 312.0
+offset_bottom = 519.0
 text = "SCORE: 0"
+label_settings = SubResource("LabelSettings_0po87")
 
 [node name="health" type="Label" parent="."]
-offset_left = 196.0
-offset_top = 516.0
-offset_right = 265.0
-offset_bottom = 542.0
+offset_left = 186.0
+offset_top = 519.0
+offset_right = 327.0
+offset_bottom = 545.0
 text = "HEALTH: 3"
+label_settings = SubResource("LabelSettings_0po87")
 
 [node name="space" type="Label" parent="."]
-offset_left = 577.0
-offset_top = 617.0
-offset_right = 656.0
-offset_bottom = 643.0
+offset_left = 466.0
+offset_top = 247.0
+offset_right = 809.0
+offset_bottom = 301.0
 text = "[space]"
+label_settings = SubResource("LabelSettings_0ci2y")
 horizontal_alignment = 1
 
 [node name="countdown" type="Label" parent="."]
-offset_left = 602.0
-offset_top = 78.0
-offset_right = 659.0
-offset_bottom = 218.0
+offset_left = 394.0
+offset_top = 72.0
+offset_right = 905.0
+offset_bottom = 212.0
 label_settings = SubResource("LabelSettings_ynb0s")
+horizontal_alignment = 1

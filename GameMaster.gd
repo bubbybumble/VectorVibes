@@ -18,6 +18,7 @@ var state = "start"
 var time_to_next_turn = 0.0
 
 func start_game():
+	$Stewart.dancing = true
 	start_time = Time.get_ticks_msec() * .001
 	$AudioStreamPlayer.play()
 

@@ -1,8 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctbcmxw0trkto"]
+[gd_scene load_steps=5 format=3 uid="uid://ctbcmxw0trkto"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_yrpxk"]
+[ext_resource type="FontFile" uid="uid://dlqshs5gav8f2" path="res://ARCADE_N.TTF" id="2_h6m30"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7y8xo"]
+font = ExtResource("2_h6m30")
 
 [sub_resource type="LabelSettings" id="LabelSettings_f8v5e"]
+font = ExtResource("2_h6m30")
 font_size = 27
 font_color = Color(1, 0.235294, 1, 1)
 
@@ -10,10 +15,10 @@ font_color = Color(1, 0.235294, 1, 1)
 script = ExtResource("1_yrpxk")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 462.0
-offset_top = 213.0
-offset_right = 789.0
-offset_bottom = 421.0
+offset_left = 320.0
+offset_top = 132.0
+offset_right = 962.0
+offset_bottom = 340.0
 text = "GAME OVER!!!!!!!!!!!!!
 
 >:(((
@@ -22,6 +27,7 @@ do better next time
 
 press [enter] to try again
 press [escape] to return to the main menu"
+label_settings = SubResource("LabelSettings_7y8xo")
 
 [node name="Score" type="Label" parent="."]
 offset_left = 461.0

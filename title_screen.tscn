@@ -1,16 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjcfasl24lroj"]
+[gd_scene load_steps=4 format=3 uid="uid://bjcfasl24lroj"]
 
 [ext_resource type="Script" path="res://title_screen.gd" id="1_e8lqj"]
+[ext_resource type="FontFile" uid="uid://dlqshs5gav8f2" path="res://ARCADE_N.TTF" id="2_6plgq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7lpso"]
+font = ExtResource("2_6plgq")
 
 [node name="title_screen" type="Node2D"]
 script = ExtResource("1_e8lqj")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 536.0
-offset_top = 251.0
-offset_right = 743.0
-offset_bottom = 355.0
+offset_left = 444.0
+offset_top = 250.0
+offset_right = 867.0
+offset_bottom = 354.0
 text = "Hello and welcome to 
 VECTOR_VIBES
 
 press [enter] to start game"
+label_settings = SubResource("LabelSettings_7lpso")
